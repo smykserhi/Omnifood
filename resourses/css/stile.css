@@ -1,0 +1,721 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background-color: #fff;         
+    color: #434343;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+.row {
+    max-width:  1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.33)),to(rgba(0, 0, 0, 0.87))), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.33),rgba(0, 0, 0, 0.87)), url(img/hero.jpg); /*Установка фона и изменение градиента для затемнения фото*/
+    
+    background-size: cover;                 /* Устанавливает картинку на весь экран*/
+    background-position: center;            /* Позиция в центр*/
+    height: 100vh;                          /* Устанавливает 100% от разрешения*/
+    background-attachment: fixed;           /*Фиксирует картинку относительно текста */
+    
+}
+section{
+    padding: 80px;
+}
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+    
+    
+}
+a:hover, 
+a:active{
+    color: #434343;
+    border-bottom: 0px;
+    
+        
+    
+}
+
+.clearfix{zoom:1}                           /*Для очистки установок предыдущего блока чтоб растояние было правельное*/
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.logo
+{    
+    width: 5.5%;
+    margin-left: 7%;
+}
+.logo-black{
+    display: none;
+    width: 5.5%;
+    margin-left: 7%;
+}
+.main-sighn {
+    position: absolute;                     /* Установка пазиции по параметрам*/
+    height: 1140px;                         /* Установка размера такого же как размер страницы*/
+    top: 50%;                               /* позиция в 50% от верха*/
+    left: 50%;                              /* позция в 50% слева */
+    
+    -webkit-transform: translate(-90%, -5%);
+    
+    transform: translate(-90%, -5%);       /* Смещение -90 по Х и -10 по Y*/
+            
+}
+.box{                                       
+    padding: 1%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%
+}
+
+h1,h2,h3{
+    font-weight: 300;                       /*Делаем менее жирным*/
+    text-transform: uppercase;              /*Делаем заглавные буквы*/
+      
+}
+
+
+h1 {
+    margin-top: 0;
+    letter-spacing: 1px;   
+    margin-bottom: 20px;
+    color: #fff;                            /* Установка цвета для H1*/
+    font-size: 200%;                        /*Установка рахмера шрифта 200% от разера заданого в разделе html (20px)*/
+                   /*Растояние между буквами*/
+    word-spacing: 4px;                      /*Растояние между словами*/
+}
+
+h2{
+    text-align: center;
+    letter-spacing: 1px;   
+    font-size: 180%;                        /*Установка рахмера шрифта 180% от разера заданого в разделе html (20px)*/
+                  
+    word-spacing: 4px;                      /*Растояние между словами*/
+    margin-bottom: 30px;
+}
+h3{
+    margin-bottom: 15px;
+}
+h2:after {                                  /* Добавляю елементы через CSS*/
+    display:block;
+    height: 2px;
+    background-color: #e67e22;
+    content:  " ";                          /* Должен быть обязательно */
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.Long-Copy{ 
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%
+    
+}
+
+
+
+
+.btm:link,
+.btm:visited,
+input[type=submit]{                    /*Общие настройки кнопок для link(не нажата) visited(нажатая) */
+    display: inline-block;                  /*делаем блок*/
+    padding-top: 10px;                      /*задаю отступ*/
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    font-weight: 300; 
+    text-decoration: none;                  /*Убираю подчеркивание под надписями ссылки*/
+    border-radius: 200px;                   /*Закругляю бока кнопки*/
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;      /*задержка в измененении цвета*/
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    margin-right: 15px;
+    
+    
+    
+}
+.btm-1:link, 
+.btm-1:visited,
+input[type=submit]{
+    
+    background-color: #e67e22;
+    -webkit-text-decoration-color: #fff;
+    text-decoration-color: #fff;
+    color: #fff;                            /*Белый цвет текста*/
+    
+}
+
+.btm-2:link, .btm-2:visited{
+    border: 1px;                            /* размер рамки*/
+    border-style: solid;                    /* тип рамки*/
+    border-color: #e67e22;                  /* Цвет рамки*/
+    color: #e67e22;
+}
+
+.btm-1:hover, 
+.btm-1:active ,
+input[type=submit]:hover,
+input[type=submit]:active{                /* hover- подвели мышку, active - кликнули */
+    background-color: #d35400;              /* меняет цвет при подводе мышки*/
+}
+.btm-2:hover, .btm-2:active{                /* hover- подвели мышку, active - кликнули */
+    background-color: #d35400;              /* меняет цвет при подводе мышки*/
+    border-color: #d35400;
+    color: #fff;
+}
+
+.navi_list {
+    float: right;                           /*Ровнение на право*/
+    list-style: none;                       /*Убрали точки листа*/
+    margin-top: 50px;
+    
+}
+nav{
+    position: absolute;
+    width: 100%;
+    padding-right: 6%;
+    
+    
+}
+.stick {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding-right: 6%;
+    box-shadow: 0 2px 0px #c7c6c6;          /*делаем тень*/
+    z-index: 9999;                          /*Этот елемент будет всегда поверх всех елементов на странице*/
+    
+
+}
+.apps , .close {
+    font-size: 300%;
+    float: right;
+    display: none;
+    cursor: pointer;            /*принаведении курсора меняется на курсор ссылки*/
+    color: white;
+}
+.close{
+    display: none;
+    
+}
+.btmnav .apps{
+    display: none;
+}
+.btmnav .close{
+    display: block;
+    color: black;
+}
+
+
+.navi_list li{
+    display: inline-block;                  /*Расположение листа по горизонтали*/
+    text-align: center;
+    font-size: 110%;
+    margin-left: 40px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    
+    
+}
+
+.navi_list li a:link, .navi_list li a:visited {
+   padding-right: 5px;
+    color: #fff;
+    text-decoration: none;                  /*Убраз подчеркивание*/
+    text-transform: uppercase;              /*Превращаем в заглавные буквы*/
+    font-size: 90%;                         /*Рахмер шрифто в % от основных настроек*/
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    
+}
+.navi_list li a:hover, .navi_list li a:active{
+    /*border: 2px;*/
+   
+    
+    border-bottom: 2px solid #e67e22;       
+    /*border-style: solid;
+    
+    /*border-radius: 20px;*/
+    /*color: #e67e22;*/
+    
+    
+} 
+.stick .navi_list li a:link, .stick .navi_list li a:visited {
+   padding-right: 5px;
+    color: #000;
+    text-decoration: none;                  /*Убраз подчеркивание*/
+    text-transform: uppercase;              /*Превращаем в заглавные буквы*/
+    font-size: 90%;                         /*Рахмер шрифто в % от основных настроек*/
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    
+}
+.stick .logo-black{
+    display: inline;
+    
+}
+.stick .logo{
+    display: none;
+}
+.stick .navi_list {
+    float: right;                           /*Ровнение на право*/
+    list-style: none;                       /*Убрали точки листа*/
+    margin-top: 25px;
+    
+}
+
+.logo2{
+    font-size: 300%;                        /*Размер иконки*/
+    color: #e67e22;                         /*Цвет иконки*/
+    margin-left: 25%;
+    display: block;                         /*Блочный елемент для удобства редактирования*/
+        
+}
+
+/*
+---------------------------------------------------------
+----MEAL SECTION-------------------------------------
+------------------------------------------------------
+
+*/
+
+.section-meals{
+    padding: 0;
+    
+}
+
+.meals-showcase{
+    list-style: none;                       /*remove points from non ordinary list*/
+    width: 100%;
+}
+.meals-showcase li{
+    display: block;
+    float: left;                            /*making floatin left that sets all images set next to each other*/
+    width: 25%;
+}
+.meal-photos{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;                       /*evary peace of content which woud be biger than container would be hide*/
+    background-color: black;                /*making background blacj beccause we will make image darker */
+    
+}
+
+.meal-photos img{
+    opacity: 0.7;                           /*making image darker and set 70%*/
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);                 /*Увеличиваем размер на 110%*/
+    -webkit-transition: opacity 0.5s,-webkit-transform 0.15s;
+    transition: opacity 0.5s,-webkit-transform 0.15s;
+    transition: transform 0.15s,opacity 0.5s;
+    transition: transform 0.15s,opacity 0.5s,-webkit-transform 0.15s;   /* делаем задержку на transform and opacity*/
+}
+.meal-photos img:hover{
+    opacity: 1;                             /*making original dark  */
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);                 /*return originale scale*/
+}
+
+/*
+------------------------------------------
+---   Steps SECTION---------------------------------
+------------------------------------
+*/
+.section-steps{
+    background-color: #efefef;
+
+}
+
+.steps-box{
+    margin-top: 30px;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    padding-top: 80px;
+}
+
+.app-screan{
+    /*display: block;*/
+    width: 35%;
+}
+.work-step{
+    margin-bottom: 50px;
+}
+.work-step:first-child{
+    
+}
+.work-step:last-of-type{    
+    margin-bottom: 80px;
+}
+.work-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22; /*making border*/
+    display: inline-block;                     
+    border-radius: 50%;
+    height: 55px;
+    width:55px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 140%;
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 5px
+}
+.btn-app:hover,
+.btn-app:active,
+.btn-app:link{
+    border-bottom: 0px;
+}
+.btn-app img{
+    height: 45px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/*-----------------------------------*/
+
+/* ---------Sities-------------*/
+
+.section-cities{
+    padding-top: 0;
+}
+.sityimg {
+    background-color: black;
+    
+    
+}
+.sitimg {
+    ;
+    
+}
+.sityimg img{
+    width: 100%;
+    height: auto;
+    /*margin: 0;*/
+    
+    padding-left: 5px;
+    padding: 0;
+    overflow: hidden;
+    
+    opacity: 0.85;          /**Затемнение*/
+}
+.city-text {
+    font-size: 90%;
+    text-align: left;
+    line-height: 150%;          /*Межстрочный интервал*/
+    
+    
+    /**padding-right: 15px;*/
+    
+}
+.city-icons ion-icon{
+    display: none;
+}
+
+
+.city-text h3{
+    
+    text-align: center;
+}
+.twit{
+    color: #4c50af;
+    padding-left: 1%;
+    display: inline-block;
+        
+}
+.star{
+    color:#e67e22;
+    padding-left: 1%;
+    display: inline-block;
+
+}
+.smile {
+    color: #23e031;
+    padding-left: 1%;
+    display: inline-block;
+
+}
+/*-----------------*/
+/*--customer-testimonials---*/
+/*------------------------*/
+
+.customer-testimonials{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.33)),to(rgba(0, 0, 0, 0.87))), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.33),rgba(0, 0, 0, 0.87)), url(img/back-customers.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;                         /* Устанавливает 100% от разрешения*/
+    color: #fff;                            /*Цвет текств**/
+    background-attachment: fixed;           /*Фиксирует картинку относительно текста */
+    
+
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height:145%;
+    position: relative;
+    margin-top: 50px;
+}
+blockquote:before{          /*Вставка текста в HTML до блока*/
+    content: "\201C";       /*текст который вставляем "\201C это спец символ */
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    margin-top: 25px;
+    font-size: 90%;
+    display: block;         /**Делает елементы как блоки и переносит на следующую строку*/
+    
+}
+cite img{
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle; /*Вертикальное выравнивание по средине*/
+}
+
+
+/*--------------*/
+/**--Plans---*/
+.section-plans{
+    
+}
+.price-Coloms{
+    margin-left: 35px;
+    background-color: #fff;
+    border-top-left-radius: 5px;        /*Закругляет край*/
+    border-top-right-radius: 5px;
+    -webkit-box-shadow: 0 2px 2px #dbdada;
+    box-shadow: 0 2px 2px #dbdada;   /*делает тень блока*/
+}
+.price-plane{
+    margin-bottom: 15px;
+    font-size: 280%;
+    color: #e67e22;
+    
+}
+.price-plane span{
+    font-size: 30%;         /**Размер шрифта берется от размера родителя тоесть от 300%*/
+}
+.list-plane{
+    list-style:none;
+    margin-bottom: 15px;
+    font-size: 95%;
+        
+}
+.list-plane a{
+    margin-bottom: 10px;
+}
+.list-plane ion-icon {
+    padding-right: 5px;
+    color: #e67e22;
+    font-size: 85%;
+    vertical-align:middle;      /*Выравнивонье в строке иконки делается на иконке*/
+
+}
+.plan-name h3{
+    text-align: center;
+    
+}
+
+.bbb {
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+/*-------------------*/
+/*---Form -----------*/
+
+.contact-form{
+    width: 60% ;           /*Macking distans betwine lable and wild smoler*/
+    margin: 0 auto;      /*macking margin top and buttom 0, left and whight auto. That technick set content on the center*/
+        
+}
+input[type=text],           /**Choosing element input only text*/
+input[type=email],
+select, 
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 7px;
+    border: solid 1px #a2a2a2;  /*Border solid 1px width and colour #a2a2a2*/
+}
+input[type=checkbox]{           /*Celected checkbox in input area*/
+    margin: 10px 5px 10px 0;      /* top right buttom left*/  
+}
+
+*:focus{outline: none;}         /*cansaling brouser celection area when we are click some input element */
+
+
+
+/*------------*/
+/*---Footer ---*/
+.Footer-section{
+    background-color: #676767;
+    color: #c9c9c9;
+    padding: 40px;
+}
+.footer-nav {
+    list-style:none;
+    float: left;
+    
+    
+    
+}
+.social-links{
+    list-style: none;               /*Убераем точки из списка*/
+    float:right;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;          /*Все елементы списка в строку*/
+    margin-right: 20px;
+    
+    
+}
+.footer-nav li a,
+.social-links li a{
+    color: #c9c9c9;
+}
+
+
+.footer-nav li:last-child,              /*выбор последнего елемента в списке*/
+.social-links li:last-child{
+    margin-right: 0;
+
+}
+
+.footer-nav li a:link,
+.social-links li a:link{
+    border-bottom: 0px
+}
+
+.footer-nav li a:hover,
+.social-links li a:hover,
+.footer-nav li a :active,
+.social-links li a:active{
+    color: #000;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.Footer-section p {
+    margin-top: 20px;
+    text-align: center;
+}
+.social-links li {
+    font-size: 150%;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+        
+}
+
+#logo-facebook:hover{       /*Когда подводим мышку*/
+    color:#3b5998;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    
+    
+}
+#logo-twitter:hover{
+    color: #00aced;
+     -webkit-transition: color 0.2s;
+     transition: color 0.2s;        /*Задержка при смене цвета 0,2с*/
+}
+#logo-googleplus:hover{
+    color: #dd4b39;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+#logo-instagram:hover{
+    color: #517fa4;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+/*-----------------Anination --------------*/
+
+.js--wp1,.js--wp2 {
+    opacity: 0;                     /* прозрачность на полную*/
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;         /*длительность анимации*/
+}
+.js--wp3{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp1.animated,.js--wp2.animated, .js--wp3.animated{                  /*когда оба класса сразу */
+    opacity: 1;                     /*прозрачность на минимум*/
+}
+.form-messages{
+    width: 70%;
+    margin: 0 auto;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+    visibility: hidden;
+
+    
+   
+}
+.success{
+    background-color: greenyellow;
+    
+}
+.error{
+    background-color: red;
+    color: aliceblue;
+    
+}
+
+
+
+
+
+
+
+
+

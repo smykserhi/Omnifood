@@ -1,0 +1,72 @@
+/*For resolution 1024 and more*/
+@media only screen and (max-width: 1200px){
+    .main-sighn {
+        height: 100%;                         /* Установка размера такого же как размер страницы*/
+        padding: 0 2%;   
+    }
+    .row{
+        padding: 0 2%;
+    }
+    .logo, .logo-black{
+        
+        
+    }
+}
+/*For resolution 768px-1023px*/
+@media only screen and (max-width: 1023px){
+    body {font-size: 90%;}
+    html { font-size: 17px;}
+    .main-sighn h1 {font-size: 135%;  }
+    .app-screan{width: 55%;}
+    .steps-box:last-child{padding-top: 0px;}
+    .btn-app img{ height: 35px;}
+    .city-text {font-size: 80%}
+    .customer-testimonials{font-size: 90%}
+    .section-plans{font-size: 85%}
+    .section-form{font-size: 85%;}
+    .Footer-section{font-size: 85%;}
+    .footer-nav li,.social-links li{ margin-right: 5px;}
+    .bbb{margin-right: 0;}
+    .navi_list{
+        display: none;
+    }
+    .apps{
+        display: inline-block;        
+    }
+    .stick .apps {
+        color: black;
+    }
+    .logo {
+        float: left;
+        width: 7%;
+    }
+    .logo-black{
+        float: left;
+        width: 7%;
+    }
+    .navi_list, .stick .navi_list {
+        float: left;
+        margin-top: 1%
+    }
+    .navi_list li{
+        display: block;
+        padding-bottom: 3%;        
+    }
+    
+}
+/*For resolution 481px-767px*/
+@media only screen and (max-width: 767px){
+    body {font-size: 70%}
+    .work-step div{
+        height: 40%; 
+        width: 12%;
+        padding-top: 1px;
+    }
+    .btn-app img{ height: 25px;}
+}
+/**For recolution les than 481px*/
+@media only screen and (max-width: 480px){
+    
+}
+
+
