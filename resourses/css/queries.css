@@ -41,6 +41,7 @@
         width: 7%;
     }
     .logo-black{
+        margin-top: 8px;
         float: left;
         width: 7%;
     }
@@ -62,7 +63,8 @@
         width: 12%;
         padding-top: 1px;
     }
-    .btn-app img{ height: 25px;}
+    .btn-app img{         
+        height: 25px;}
 }
 /**For recolution les than 481px*/
 @media only screen and (max-width: 480px){

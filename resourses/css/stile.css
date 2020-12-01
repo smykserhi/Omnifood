@@ -515,9 +515,9 @@ cite img{
 
 /*--------------*/
 /**--Plans---*/
-.section-plans{
+/* .section-plans{
     
-}
+} */
 .price-Coloms{
     margin-left: 35px;
     background-color: #fff;
@@ -592,7 +592,7 @@ input[type=checkbox]{           /*Celected checkbox in input area*/
 .Footer-section{
     background-color: #676767;
     color: #c9c9c9;
-    padding: 40px;
+    padding: 20px;
 }
 .footer-nav {
     list-style:none;
@@ -611,7 +611,7 @@ input[type=checkbox]{           /*Celected checkbox in input area*/
 .footer-nav li,
 .social-links li{
     display: inline-block;          /*Все елементы списка в строку*/
-    margin-right: 20px;
+    margin-right: 10px;
     
     
 }
